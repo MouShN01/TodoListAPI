@@ -6,6 +6,7 @@ namespace TodoListAPI.Database
     {
         private readonly IConfiguration _configuration;
         public DbSet<Todo> Todos {get; set;}
+        public DbSet<Account> Accounts { get; set;}
         public ApplicationDbContext(IConfiguration configuration)
         {
             _configuration = configuration;
